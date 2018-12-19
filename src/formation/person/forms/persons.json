@@ -59,6 +59,7 @@
 						"border": true,
 						"editing": "false",
 						"selecting": {},
+						"sorting": true,
 						"columns": [
 							{
 								"$bind": "name",
