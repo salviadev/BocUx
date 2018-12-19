@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+		"moment": "latest",
+		"bootstrap-datepicker": "latest",
+		"bootstrap4-datetimepicker": "latest"
+	},
+	"deploy": ["bootstrap4-datetimepicker", "bootstrap-datepicker"]
+}

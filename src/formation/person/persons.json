@@ -1,0 +1,17 @@
+{
+	"name": "persons",
+	"$items": [
+		{
+			"$config": {
+				"$titleIsHidden": true,
+				"form": {
+					"name": "person/forms/persons",
+					"meta": "person/metas/persons",
+					"controller": "basic.persons.controller"
+				},
+				"$type": "form"
+			}
+		}
+	],
+	"$type": "block"
+}

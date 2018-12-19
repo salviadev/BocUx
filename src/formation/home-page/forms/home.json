@@ -1,0 +1,50 @@
+{
+	"name": "home",
+	"$type": "block",
+	"$items": [
+		{
+			"$type": "block",
+			"$items": [
+				{
+					"$type": "block",
+					"$items": [],
+					"$title": {
+						"value": "Formation",
+						"size": 4,
+						"$style": ""
+					},
+					"$inline": true
+				},
+				{
+					"$type": "block",
+					"$items": [
+						{
+							"$bind": "$links.persons"
+						}
+					],
+					"$name": "Links",
+					"$inline": true
+				},
+				{
+					"$type": "block",
+					"$items": [],
+					"$inline": true
+				},
+				{
+					"$type": "row",
+					"$items": [
+						{
+							"$items": [],
+							"$colSize": 6
+						},
+						{
+							"$items": [],
+							"$colSize": 6
+						}
+					]
+				}
+			]
+		}
+	],
+	"form": true
+}

@@ -1,0 +1,39 @@
+{
+    "application": {
+        "title": "Formation"
+    },
+    "plugins": {
+        "debug": {
+            "scripts": [
+            ],
+            "styles": [
+                "<%= bowerPath %>/bootstrap4-datetimepicker/build/css/bootstrap-datetimepicker.css"
+            ]
+        },
+        "dist": {
+            "scripts": [
+            ],
+            "styles": [
+                 "<%= bowerPath %>/bootstrap4-datetimepicker/build/css/bootstrap-datetimepicker.min.css"
+            ]
+        }
+    },
+    "plugins_before": {
+        "debug": {
+            "scripts": [
+                "<%= bowerPath %>/moment/min/moment.min.js",
+				"<%= bowerPath %>/bootstrap4-datetimepicker/src/js/bootstrap-datetimepicker.js",
+                "<%= bowerPath %>/highcharts/modules/data.js"
+            ],
+            "styles": []
+        },
+        "dist": {
+            "scripts": [
+                "<%= bowerPath %>/moment/min/moment.min.js",
+                "<%= bowerPath %>/bootstrap4-datetimepicker/build/js/bootstrap-datetimepicker.min.js",
+                "<%= bowerPath %>/highcharts/modules/data.js"
+            ],
+            "styles": []
+        }
+    }
+}

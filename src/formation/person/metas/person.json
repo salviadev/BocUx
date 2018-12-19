@@ -1,0 +1,62 @@
+{
+	"type": "object",
+	"name": "PersonView",
+	"title": "Person",
+	"primaryKey": [
+		"id"
+	],
+	"properties": {
+		"id": {
+			"type": "integer"
+		},
+		"personId": {
+			"title": "Code Person",
+			"type": "string",
+			"format": "code"
+		},
+		"age": {
+			"title": "Age",
+			"type": "integer"
+		},
+		"name": {
+			"title": "Last Name",
+			"format": "code",
+			"type": "string"
+		},
+		"firstName": {
+			"title": "First Name",
+			"format": "code",
+			"type": "string"
+		},
+		"fullName": {
+			"title": "Full Name",
+			"format": "code",
+			"type": "string"
+		}
+	},
+	"states": {
+		"personId": {
+			"isMandatory": true
+		},
+		"name": {
+			"isMandatory": true
+		},
+		"firstName": {
+			"isMandatory": true
+		},
+		"fullName": {
+			"isMandatory": true,
+			"isReadOnly": true
+		}
+	},
+	"links": {
+		"save": {
+			"isSave": true
+		},
+		"close": {
+			"isCancel": true,
+			"ux": true,
+			"after": "$action.$back"
+		}
+	}
+}

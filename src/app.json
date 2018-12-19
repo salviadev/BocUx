@@ -1,0 +1,17 @@
+{
+    "odata": {
+        "base": "/bus/{$module}/odata",
+        "$module": "Basic",
+        "authentication": "header-session"
+    },
+    "sync": {
+        "base": "/bus/{$module}/ViewModels",
+        "$module": "Basic"
+    },
+    "mem": {
+        "description": "default tenant &&  default authorization header",
+        "tenant": "spo",
+        "authHeader": "Basic YWRtaW46c2Fsdmlh"
+    },
+    "support": "Marketing@salviadeveloppement.com"
+}

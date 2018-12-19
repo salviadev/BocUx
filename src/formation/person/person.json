@@ -1,0 +1,17 @@
+{
+	"name": "person",
+	"$items": [
+		{
+			"$config": {
+				"$titleIsHidden": true,
+				"form": {
+					"name": "person/forms/person",
+					"meta": "person/metas/person",
+					"controller": "phoenix.empty.controller"
+				},
+				"$type": "form"
+			}
+		}
+	],
+	"$type": "block"
+}

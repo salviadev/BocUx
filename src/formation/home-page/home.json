@@ -1,0 +1,20 @@
+{
+	"name": "home",
+	"$menus": {
+		"left": "detail"
+	},
+	"$items": [
+		{
+			"$config": {
+				"$titleIsHidden": true,
+				"form": {
+					"name": "home-page/forms/home",
+					"meta": "home-page/metas/home",
+					"controller": "formation.home.controller"
+				},
+				"$type": "form"
+			}
+		}
+	],
+	"$type": "block"
+}

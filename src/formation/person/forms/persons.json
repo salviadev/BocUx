@@ -1,0 +1,55 @@
+{
+	"name": "persons",
+	"$type": "block",
+	"datasets1": {
+        "maindata": {
+            "name": "maindata",
+			"$type": "sync",
+            "$params": {
+				"$entity": "Persons",
+                "$method": "POST",
+                "$data": {
+                }
+            }
+        }
+    },
+
+	"$items": [
+		{
+			"$type": "block",
+			"$items": []
+		},
+		{
+			"$type": "block",
+			"$items": [
+				{
+					"$bind": "persons",
+					"options": {
+						"striped": false,
+						"allowColumnMove": true,
+						"align": "middle",
+						"border": true,
+						"editing": "true",
+						"selecting": {
+							"row": true,
+							"cell": true
+						},
+						"columns": [
+							{
+								"$bind": "name"
+							},
+							{
+								"$bind": "firstName"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"$type": "block",
+			"$items": []
+		}
+	],
+	"form": true
+}

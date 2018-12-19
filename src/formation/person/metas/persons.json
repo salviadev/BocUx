@@ -1,0 +1,28 @@
+{
+	"type": "object",
+	"name": "PersonsView",
+	"title": "Person",
+	"primaryKey": [
+		"id"
+	],
+	"properties": {
+		"id": {
+			"type": "integer"
+		},
+		"persons": {
+			"type": "array",
+			"items": {
+				"$ref": "#/definitions/Person"
+			},
+			"$links": {
+				"add": {
+					"title": "Person",
+					"ux": true
+				}
+			}
+		}
+	},
+	"definitions": {
+		"Person": "person/metas/person"
+	}
+}

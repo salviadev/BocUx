@@ -1,0 +1,24 @@
+{
+	"name": "detail-left.json",
+	"$groups": [
+		{
+			"$title": "Géneral",
+			"$items": [
+				{
+					"$title": "Accueil",
+					"$icon": "home",
+					"$link": {
+						"$page": "home-page/home"
+					}
+				},
+				{
+					"$title": "Persons",
+					"$link": {
+						"$page": "person/persons"
+					}
+				}
+
+			]
+		}
+	]
+}

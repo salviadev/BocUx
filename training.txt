@@ -1,0 +1,18 @@
+1/Première Séance 
+	Architecture
+	Client / Server exemple (greetings)
+	Schema / Page   / Authoring
+	Exercices : a partir des données créer un écran (schema – page – layout) 
+2/ Deuxième séance 
+	Layouts en  détail
+	Le premier contrôler
+	Navigation
+	Grid (basic)
+	States
+	Exercices : a partir des images créer des écrans
+3/ Troisième séance
+	Authoring: complexe example  ($widget label)
+	Visibilité des blocks 
+	Errors 
+	Grid : array-actions / filter /search
+

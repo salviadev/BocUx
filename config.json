@@ -1,0 +1,11 @@
+{
+	"http": {
+		"port": "9000"
+	},
+	"proxy": {
+		"local": {
+			"src": "/bus/Basic/ViewModels/*",
+			"dst": "http://localhost:3000"
+		}
+	}
+}

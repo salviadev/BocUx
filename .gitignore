@@ -1,0 +1,10 @@
+/node_modules
+/public
+/dist
+/.vscode
+/versions
+/docs
+/yarn-error.log
+/.tscache/lib/timestamp
+/.tscache/lib/hashes
+/src/accession/tests

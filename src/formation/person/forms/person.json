@@ -1,0 +1,69 @@
+{
+	"name": "person",
+	"$type": "block",
+	"datasets": {
+        "maindata": {
+            "name": "maindata",
+			"$type": "sync",
+            "$params": {
+				"$entity": "Person",
+				"$persistent": true,
+                "$method": "POST",
+                "$data": {
+					"personId": "$url.personId"
+                }
+            }
+        }
+    },
+	"$items": [
+		{
+			"$type": "block",
+			"$items": [
+				{
+					"$type": "block",
+					"$items": []
+				},
+				{
+					"$type": "block",
+					"$items": [
+						{
+							"$bind": "personId"
+						},
+						{
+							"$bind": "firstName"
+						},
+						{
+							"$bind": "name"
+						},
+						{
+							"$bind": "fullName"
+						}
+					],
+					"$fieldsOptions": {
+						"columns": true
+					}
+				},
+				{
+					"$type": "block",
+					"$items": [
+						{
+							"$bind": "$links.save",
+							"options": {
+								"right": true
+							}
+						},
+						{
+							"$bind": "$links.close",
+							"options": {
+								"right": true
+							}
+						}
+					],
+					"$inline": true,
+					"$sticky": "bottom"
+				}
+			]
+		}
+	],
+	"form": true
+}
