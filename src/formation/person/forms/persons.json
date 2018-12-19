@@ -18,6 +18,20 @@
 			"$items": [
 				{
 					"$bind": "persons",
+					"$widget": "multi-search",
+					"options": {
+						"fields": [
+							"name",
+							"firstName"
+						]
+					}
+				},
+				{
+					"$bind": "persons",
+					"$widget": "filter-array"
+				},
+				{
+					"$bind": "persons",
 					"$widget": "array-actions",
 					"options": {
 						"icon": "bars",
@@ -30,7 +44,8 @@
 						]
 					}
 				}
-			]
+			],
+			"$inline": true
 		},
 		{
 			"$type": "block",
@@ -43,15 +58,13 @@
 						"align": "middle",
 						"border": true,
 						"editing": "false",
-						"selecting": {
-						},
+						"selecting": {},
 						"columns": [
 							{
 								"$bind": "name",
 								"options": {
 									"actionName": "modify"
 								}
-								
 							},
 							{
 								"$bind": "firstName"
