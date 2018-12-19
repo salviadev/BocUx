@@ -1,23 +1,36 @@
 {
 	"name": "persons",
 	"$type": "block",
-	"datasets1": {
-        "maindata": {
-            "name": "maindata",
+	"datasets": {
+		"maindata": {
+			"name": "maindata",
 			"$type": "sync",
-            "$params": {
+			"$params": {
 				"$entity": "Persons",
-                "$method": "POST",
-                "$data": {
-                }
-            }
-        }
-    },
-
+				"$method": "POST",
+				"$data": {}
+			}
+		}
+	},
 	"$items": [
 		{
 			"$type": "block",
-			"$items": []
+			"$items": [
+				{
+					"$bind": "persons",
+					"$widget": "array-actions",
+					"options": {
+						"icon": "bars",
+						"titleIsHidden": false,
+						"links": [
+							{
+								"name": "add",
+								"important": true
+							}
+						]
+					}
+				}
+			]
 		},
 		{
 			"$type": "block",

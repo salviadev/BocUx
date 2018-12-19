@@ -14,9 +14,10 @@
 			"items": {
 				"$ref": "#/definitions/Person"
 			},
-			"$links": {
+			"links": {
 				"add": {
 					"title": "Person",
+					"isNew": true,
 					"ux": true
 				}
 			}
