@@ -42,14 +42,17 @@
 						"allowColumnMove": true,
 						"align": "middle",
 						"border": true,
-						"editing": "true",
+						"editing": "false",
 						"selecting": {
-							"row": true,
-							"cell": true
+							"row": true
 						},
 						"columns": [
 							{
-								"$bind": "name"
+								"$bind": "name",
+								"options": {
+									"actionName": "modify"
+								}
+								
 							},
 							{
 								"$bind": "firstName"

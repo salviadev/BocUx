@@ -19,6 +19,9 @@
 					"title": "Person",
 					"isNew": true,
 					"ux": true
+				},
+				"modify": {
+					"ux": true
 				}
 			}
 		}
