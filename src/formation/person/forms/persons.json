@@ -44,7 +44,6 @@
 						"border": true,
 						"editing": "false",
 						"selecting": {
-							"row": true
 						},
 						"columns": [
 							{

@@ -3,7 +3,7 @@ namespace Accession {
     const
         _p = Phoenix,
         _customData = _p.customData;
-        
+
     class PersonsController extends Phoenix.ui.FormController {
         public initObjectState(data: any) {
             // Initialization            
@@ -11,9 +11,24 @@ namespace Accession {
         public onModelChanged(action: any, model: any, form: Phoenix.ui.Form) {
             super.onModelChanged(action, model, form);
             const that = this;
+            console.log(action)
             switch (action.property) {
-                case '$links.save':
-                    console.log('save')
+                case 'persons.$links.add':
+                    form.navigate('person/person', {
+                        canGoBack: true,
+                        checkForChanges: false,
+                        urlSearch: {
+                        }
+                    });
+                    break
+                case 'persons.$item.$links.modify':
+                    form.navigate('person/person', {
+                        canGoBack: true,
+                        checkForChanges: false,
+                        urlSearch: {
+                            personId: action.actionParams.personId
+                        }
+                    });
                     break
             }
         }

@@ -51,7 +51,11 @@
 	},
 	"links": {
 		"save": {
-			"isSave": true
+			"isSave": true,
+			"after": "$action.$back"
+		},
+		"modify": {
+			"ux": true
 		},
 		"close": {
 			"isCancel": true,
