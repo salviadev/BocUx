@@ -27,13 +27,19 @@
 					"$type": "block",
 					"$items": [
 						{
-							"$bind": "personId"
+							"$bind": "personId",
+							"options": {
+								"mask": "uppercase"
+							}
 						},
 						{
 							"$bind": "firstName"
 						},
 						{
-							"$bind": "name"
+							"$bind": "name",
+							"options": {
+								"mask": "uppercase"
+							}
 						},
 						{
 							"$bind": "fullName"
