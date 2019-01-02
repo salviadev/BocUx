@@ -20,7 +20,11 @@
 					"$items": [
 						{
 							"$bind": "$links.persons"
+						},
+						{
+							"$bind": "$links.lookup"
 						}
+
 					],
 					"$name": "Links",
 					"$inline": true

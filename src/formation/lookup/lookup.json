@@ -1,0 +1,17 @@
+{
+	"name": "lookup",
+	"$items": [
+		{
+			"$config": {
+				"$titleIsHidden": true,
+				"form": {
+					"name": "lookup/forms/lookup",
+					"meta": "lookup/metas/lookup",
+					"controller": "phoenix.empty.controller"
+				},
+				"$type": "form"
+			}
+		}
+	],
+	"$type": "block"
+}

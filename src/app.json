@@ -4,6 +4,11 @@
         "$module": "Basic",
         "authentication": "header-session"
     },
+    "find": {
+        "base": "/bus/{$module}/lookup/dataset",
+        "$module": "Basic"
+    },
+
     "sync": {
         "base": "/bus/{$module}/ViewModels",
         "$module": "Basic"

@@ -6,6 +6,11 @@
 		"local": {
 			"src": "/bus/Basic/ViewModels/*",
 			"dst": "http://localhost:3000"
+		},
+		"find": {
+			"src": "/bus/Basic/lookup/dataset/*",
+			"dst": "http://localhost:3000"
 		}
+
 	}
 }

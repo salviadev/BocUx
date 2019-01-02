@@ -1,0 +1,71 @@
+{
+	"type": "object",
+	"properties": {
+		"personId": {
+			"title": "Person",
+			"type": "string"
+		},
+		"firstName": {
+			"type": "string",
+			"title": "First Name",
+			"ux": true
+		},
+		"lastName": {
+			"title": "Last Name",
+			"type": "string",
+			"ux": true
+		}
+	},
+	"links": {},
+	"lookups": {
+		"person": {
+			"data": {
+				"$type": "odata",
+				"$params": {
+					"$entity": "persons",
+					"$type": "find"
+				}
+			},
+			"schema": {
+				"type": "object",
+				"properties": {
+					"documents": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"name": "EvenementForEcheance",
+							"properties": {
+								"id": {
+									"type": "integer",
+									"capabilities": ""
+								},
+								"personId": {
+									"type": "string",
+									"format": "code",
+									"capabilities": ""
+								},
+								"firstName": {
+									"type": "string",
+									"title": "First Name",
+									"capabilities": "searchable,sortable,filtrable"
+								},
+								"name": {
+									"title": "Last Name",
+									"type": "string",
+									"capabilities": "searchable,sortable,filtrable"
+								}
+							}
+						}
+					}
+				}
+			},
+			"primaryKey": "id",
+			"mapping": {
+				"personId": "personId",
+				"firstName": "firstName",
+				"lastName": "name"
+
+			}
+		}
+	}
+}

@@ -20,6 +20,14 @@ namespace Formation {
                         }
                     });
                     break;
+                case '$links.lookup':
+                    form.navigate('lookup/lookup', {
+                        canGoBack: true,
+                        checkForChanges: false,
+                        urlSearch: {
+                        }
+                    });
+                    break;
             }
         }
     }

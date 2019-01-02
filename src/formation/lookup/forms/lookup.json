@@ -1,0 +1,42 @@
+{
+	"name": "lookup",
+	"$type": "block",
+	"datasets": {
+		"maindata": {
+			"name": "maindata",
+			"$type": "sync",
+			"$params": {
+				"$entity": "Lookup",
+				"$persistent": true,
+				"$method": "POST",
+				"$data": {}
+			}
+		}
+	},
+	"$items": [
+		{
+			"$type": "block",
+			"$items": [
+				{
+					"$bind": "personId",
+					"$lookup": "person",
+					"options": {
+					}
+				},
+				{
+					"$bind": "firstName",
+					"options": {
+						"readOnly": true
+					}
+				},
+				{
+					"$bind": "lastName",
+					"options": {
+						"readOnly": true
+					}
+				}
+			]
+		}
+	],
+	"form": true
+}
