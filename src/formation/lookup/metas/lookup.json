@@ -1,10 +1,6 @@
 {
 	"type": "object",
 	"properties": {
-		"personId": {
-			"title": "Person",
-			"type": "string"
-		},
 		"firstName": {
 			"type": "string",
 			"title": "First Name",
@@ -20,10 +16,15 @@
 	"lookups": {
 		"person": {
 			"data": {
-				"$type": "odata",
+				"$type": "find",
 				"$params": {
 					"$entity": "persons",
-					"$type": "find"
+					"$orderby": "firstName",
+					"$filter": {
+						"name": {
+							"$gt": "2"
+						}
+					}
 				}
 			},
 			"schema": {
@@ -33,17 +34,8 @@
 						"type": "array",
 						"items": {
 							"type": "object",
-							"name": "EvenementForEcheance",
+							"name": "Person",
 							"properties": {
-								"id": {
-									"type": "integer",
-									"capabilities": ""
-								},
-								"personId": {
-									"type": "string",
-									"format": "code",
-									"capabilities": ""
-								},
 								"firstName": {
 									"type": "string",
 									"title": "First Name",
@@ -61,10 +53,8 @@
 			},
 			"primaryKey": "id",
 			"mapping": {
-				"personId": "personId",
 				"firstName": "firstName",
 				"lastName": "name"
-
 			}
 		}
 	}

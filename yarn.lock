@@ -7,10 +7,10 @@
   resolved "http://verdaccio/@phoenix%2fphoenix-app/-/phoenix-app-2.0.0.tgz#82d70aee6b4d7373104970e1b5594da67dbd8dfc"
   integrity sha512-+Lgzr8Cwr5fC/7voqqg3biF+7dzaZA7yiXdR4mvXlMS5XF4SceDhHj+EcHmX0Ph3Rh89hBOcyryOq1bp586c/Q==
 
-"@phoenix/phoenix-cli@^2.0.0":
-  version "2.0.23"
-  resolved "http://verdaccio/@phoenix%2fphoenix-cli/-/phoenix-cli-2.0.23.tgz#13274456a3c581f83625a4259b048214e3469a90"
-  integrity sha512-Ncu21VubFK94hn8FwAqQnqAwEAPX+kmtiz/hP/ivSQzUA77KZErPxof2I590BHL1wMtXI1AOtFJd3ky3MBf53A==
+"@phoenix/phoenix-cli@^3.0.0":
+  version "3.0.3"
+  resolved "http://verdaccio/@phoenix%2fphoenix-cli/-/phoenix-cli-3.0.3.tgz#0c01dd22d629ce72e94fdb20204f627f3e030117"
+  integrity sha512-xNh7g2otCuVmh9OB+iwtQLeVCnH08GkB5SEJsnkeA5GHJ+vxMPgC/k9pUfZfCjLMeQ6uIzcA7JE5uwniJnSvlQ==
 
 "@phoenix/phoenix-seed@^1.0.0":
   version "1.0.0"

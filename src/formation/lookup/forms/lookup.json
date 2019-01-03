@@ -18,15 +18,9 @@
 			"$type": "block",
 			"$items": [
 				{
-					"$bind": "personId",
+					"$bind": "firstName",
 					"$lookup": "person",
 					"options": {
-					}
-				},
-				{
-					"$bind": "firstName",
-					"options": {
-						"readOnly": true
 					}
 				},
 				{
